@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Simple Pricing Plans</h1>
+        <p class="subtitle">Choose the best plan for your business</p>
+
+        <!-- Billing Toggle -->
+        <div class="toggle-box">
+            <span>Monthly</span>
+
+            <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider"></span>
+            </label>
+
+            <span>Yearly</span>
+            <span class="save">Save 20%</span>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="cards">
+
+            <!-- Basic -->
+            <div class="card">
+                <h2>Basic</h2>
+                <p>For individuals</p>
+
+                <h3>
+                    $<span class="price"
+                        data-monthly="9"
+                        data-yearly="86">9</span>
+                    <small>/month</small>
+                </h3>
+
+                <ul>
+                    <li>5 Projects</li>
+                    <li>10 GB Storage</li>
+                    <li>Email Support</li>
+                    <li>Basic Analytics</li>
+                </ul>
+
+                <button>Get Started</button>
+            </div>
+
+            <!-- Pro -->
+            <div class="card popular">
+
+                <div class="badge">POPULAR</div>
+
+                <h2>Pro</h2>
+                <p>For growing businesses</p>
+
+                <h3>
+                    $<span class="price"
+                        data-monthly="19"
+                        data-yearly="182">19</span>
+                    <small>/month</small>
+                </h3>
+
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>50 GB Storage</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+
+                <button>Choose Pro</button>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="card">
+
+                <div class="badge best">BEST VALUE</div>
+
+                <h2>Enterprise</h2>
+                <p>For large teams</p>
+
+                <h3>
+                    $<span class="price"
+                        data-monthly="49"
+                        data-yearly="470">49</span>
+                    <small>/month</small>
+                </h3>
+
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>500 GB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Premium Analytics</li>
+                </ul>
+
+                <button>Contact Sales</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
